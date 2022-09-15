@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "live-server ./frontend/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/IG-Kim2511/me_2022-0314-z-2022-0915-Ecommerce-multiPage-js-SASS-package/issues"
   },
-  "homepage": "https://github.com/IG-Kim2511/me_2022-0314-z-2022-0915-Ecommerce-multiPage-js-SASS-package#readme"
+  "homepage": "https://github.com/IG-Kim2511/me_2022-0314-z-2022-0915-Ecommerce-multiPage-js-SASS-package#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
