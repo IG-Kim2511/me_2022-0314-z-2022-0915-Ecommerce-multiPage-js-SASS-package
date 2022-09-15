@@ -19,5 +19,8 @@
   "homepage": "https://github.com/IG-Kim2511/me_2022-0314-z-2022-0915-Ecommerce-multiPage-js-SASS-package#readme",
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.3"
   }
 }
