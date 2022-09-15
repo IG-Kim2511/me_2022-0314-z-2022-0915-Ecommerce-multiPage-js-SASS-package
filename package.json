@@ -1,0 +1,19 @@
+{
+  "name": "me_2022-0314-z-2022-0915-ecommerce-multipage-js-sass-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IG-Kim2511/me_2022-0314-z-2022-0915-Ecommerce-multiPage-js-SASS-package.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IG-Kim2511/me_2022-0314-z-2022-0915-Ecommerce-multiPage-js-SASS-package/issues"
+  },
+  "homepage": "https://github.com/IG-Kim2511/me_2022-0314-z-2022-0915-Ecommerce-multiPage-js-SASS-package#readme"
+}
