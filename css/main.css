@@ -2,15 +2,14 @@
 @-webkit-keyframes fadeIn {
   0% {
     -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+            transform: scale(1.5);
     opacity: 0;
   }
 }
-
 @keyframes fadeIn {
   0% {
     -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+            transform: scale(1.5);
     opacity: 0;
   }
 }
@@ -20,7 +19,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   outline: none;
   border: none;
@@ -32,5 +31,59 @@
 html {
   overflow-x: hidden;
   font-size: 62.5%;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #d61319;
+  border-radius: 5rem;
+}
+
+body {
+  background: #eee;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  color: #333;
+}
+
+.heading span {
+  color: #d61319;
+}
+
+.coding {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  background: gold;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: .5rem;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  background: #d61319;
+}
+
+.btn:hover {
+  background: #333;
 }
 /*# sourceMappingURL=main.css.map */
