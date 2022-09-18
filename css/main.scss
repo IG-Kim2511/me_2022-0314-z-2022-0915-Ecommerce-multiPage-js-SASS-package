@@ -277,4 +277,27 @@ background: $blue;
       }
 }
 
-// header - navbar - end
+
+// 🍀index.html
+// 🍀header - navbar - end
+
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background: $blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9%;
+
+
+
+
+
+
+  
+}
