@@ -246,4 +246,53 @@ section {
 .swiper-button-prev::after {
   font-size: 3rem;
   color: #333;
+}
+
+.quick-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: #333;
+}
+.quick-links .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+}
+.quick-links i {
+  color: #00CBAA;
+}
+.quick-links .links a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: #fff;
+}
+.quick-links .links a:hover {
+  color: #00CBAA;
+}
+.quick-links .share a {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+.quick-links .share:hover {
+  color: #00CBAA;
+}
+.quick-links .credit {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.quick-links .credit p {
+  font-size: 2rem;
+  color: #666;
+}
+.quick-links .credit p span {
+  color: #3b5998;
+}
+.quick-links .credit img {
+  height: 4rem;
 }/*# sourceMappingURL=main.css.map */
