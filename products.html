@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- toasty -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <!-- nav header -->
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo"><i class="fa-solid fa-store"></i> shopie</a>
+
+            <!-- 🦄type="search" ,  class="fas fa-search"-->
+
+            <!-- 
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="search here...">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+                -->
+
+            <div class="icons">
+                <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+                <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="./products.html"><i class="fa-solid fa-bag-shopping"></i></div>
+                <!-- <a href="login.html"><i class="fa-solid fa-user"></i></a> -->
+                <!-- <a href="#"><i class="fa-solid fa-heart"></i></a> -->
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+
+        <div class="side-bar">
+            <div class="close-side-bar"> <i class="fa-solid fa-xmark"></i> </div>
+            <div class="user">
+                <img src="./images/pokemon-pika.png" alt="">
+                <h3>user name : pikachu</h3>
+                <a href="#">log out</a>
+            </div>
+
+            <nav class="navbar">
+                <a href="./index.html"> <i class="fas fa-angle-right"></i> home </a>
+                <a href="./products.html"> <i class="fas fa-angle-right"></i> products </a>
+                <a href="./cart.html"> <i class="fas fa-angle-right"></i> cart </a>
+                <a href="./about.html"> <i class="fas fa-angle-right"></i> about </a>
+                <a href="./contact.html"> <i class="fas fa-angle-right"></i> contact </a>
+                <a href="./login.html"> <i class="fas fa-angle-right"></i> login </a>
+                <a href="./register.html"> <i class="fas fa-angle-right"></i> register </a>
+                <button class="delete-all-btn btn">clear localstorage</button>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- category -->
+
+
+    <section class="category">
+        <h1 class="heading">shop by <span>category</span> </h1>
+
+        <div class="box-container">
+            <button class="box-container">
+                <h3>all</h3>
+            </button>
+
+            <button href="#" class="box men">
+                <h3>Men</h3>
+            </button>
+
+            <button href="#" class="box women">
+                <h3>Women</h3>
+            </button>
+
+            <button href="#" class="box jewelry">
+                <h3>jewelry</h3>
+            </button>
+
+
+            <button href="#" class="box electronic">
+                <h3>Electronic</h3>
+            </button>
+
+        </div>
+
+    </section>
+    <!-- PRODUCTS -->
+
+    <section class="products">
+        <!-- js518-10 -->
+        <h1 class="heading">
+            <span>Loading...Fetching API</span>
+        </h1>
+
+        <!-- js09 . rendering -->
+        <div class="box-container">
+            <!-- 
+                <div class="box">
+                    <div class="image">
+                        <img src="${p_product.image}"  class="main-img" alt="${p_product.title}">                    
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart" onclick="addToCart(${p_product.id})"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>${p_product.title}</h3>
+                        <div class="price">$${p_product.price}</div>
+                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price">inventory: ${p_product.inStock}</div>
+                        <button class="btn" onclick="addToCart(${p_product.id})">add to cart</button>
+                    </div>
+                </div>
+             -->
+
+
+
+            <div class="box">
+                <div class="image">
+                    <img src="" alt="" class="main-img">
+                    <div class="icons">                        
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>title</h3>
+                    <div class="price">price</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">instock</div>
+                    <button class="btn">add to cart</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    
+
+    <!-- footer -->
+
+    <section class="quick-links">
+
+        <a href="./index.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+
+        <div class="links">
+            <a href="./index.html"> home </a>
+            <a href="./products.html"> products </a>
+            <a href="./cart.html"> cart </a>
+            <a href="./about.html"> about </a>
+            <a href="./contact.html"> contact </a>
+            <a href="./login.html"> login </a>
+            <a href="./register.html"> register </a>
+
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+    </section>
+
+
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- toasty -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- <script src="./nav.js"></script> -->
+    <script src="./main.js"></script>
+    <script src="./products.js"></script>
+
+
+
+</body>
+
+</html>
