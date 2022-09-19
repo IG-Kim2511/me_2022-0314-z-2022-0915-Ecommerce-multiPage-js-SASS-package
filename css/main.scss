@@ -130,6 +130,25 @@ background: $blue;
         }
     }
 
+    // navbar-top
+    .navbar-top {
+      padding-top: 1rem;
+
+      display: flex;
+  
+      a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: $light-bg;
+  
+        &:hover {
+          color: $blue;  
+        }  
+   
+      }
+    }
+
     // ????     .search-form ?????
 
     .search-form {
@@ -533,6 +552,216 @@ background: $blue;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 🥚media query
+
+@media (max-width:1200px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+}
+
+@media (max-width:991px) {
+
+  .quick-links {
+    flex-flow: column;
+    text-align: center;
+
+    .links {
+      padding: 1rem 0;
+
+      a {
+        display: block;
+        font-size: 2rem;
+        padding: 1rem 0;
+      }
+    }
+
+    .share {
+
+      a {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  .credit {
+    flex-flow: column;
+    text-align: center;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .search-btn {
+    display: inline-block;
+  }
+
+  .header {
+
+    .navbar-top{
+      display: none;
+    }
+
+    .search-form {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-radius: 0;
+      box-shadow: $box-shadow;
+      height: 6rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      // 👉js0130.
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .home {
+
+    .slide {
+      text-align: center;
+    }
+  }
+
+  .newsletter {
+    text-align: center;
+
+    .content {
+      h3 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+}
+
+@media (max-width:450px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    justify-content: center;
+
+    .logo {
+      display: none;
+    }
+
+    .icons a,
+    .icons div {
+      margin: 0 1rem;
+    }
+  }
+
+  .home {
+
+    .slide {
+      .image {
+
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .arrivals .box-container .box {
+    flex-flow: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .contact form .inputBox input {
+    width: 100%;
+  }
+
+  .shopping-cart .cart-total {
+    text-align: center;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+}
 
 
 
