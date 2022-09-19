@@ -197,3 +197,86 @@ electronicElm.addEventListener('click',()=>{
     renderProducts_inside(dataProductsE);
 });
 
+
+// js13. add to cart, number of unit
+
+
+function addToCart(p_id) {
+
+    // js637, toastify
+
+    Toast();
+
+    console.log(cart)
+
+    // js13-30
+
+    if (cart.some((pp_item)=> pp_item.id ===p_id)) {
+        changeNumberOfUnits('plus',p_id);
+        
+        // js13-20
+    } else {
+        const item = dataProducts.find((pp_product)=> pp_product.id ===p_id);
+        console.log(item)
+
+        cart.push(
+            {
+                ...item,
+                numberOfUnits:1,
+            }
+        )
+        
+    }
+    
+}
+
+function changeNumberOfUnits(p_action, p_id) {
+
+    cart = cart.map((p_item)=>{
+        let numberOfUnits = p_item.numberOfUnits;
+
+        if (p_item.id === p_id) {
+            if (p_action === 'minus'&& numberOfUnits>1) {
+                numberOfUnits--;
+                
+            } else if (p_action ==='plus' && numberOfUnits < p_item.inStock) {
+                numberOfUnits++;
+                
+            }
+             else if (p_action ==='plus'&&numberOfUnits ===p_item.inStock) {
+                alert(`sorry. out of stock`);
+                
+            }            
+        } 
+        return{
+            ...p_item,
+            numberOfUnits:numberOfUnits,
+        }
+    }
+
+    )
+
+    updateCart();
+    
+}
+
+function updateCart() {
+
+    localStorage.setItem('CART',JSON.stringify(cart));
+    console.log(cart)
+    
+}
+updateCart();
+
+//🍀  localStorage.clear(); /  location.reload();    
+// 🥒js13-10,
+
+const deleteAllBtn = document.querySelector('.delete-all-btn');
+// const checkoutBtn = document.querySelector('.checkoutBtn');
+
+deleteAllBtn.addEventListener('click',()=>{
+    localStorage.clear();
+    location.reload();    
+});
+
+
