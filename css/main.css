@@ -137,10 +137,6 @@ section {
   color: #00CBAA;
 }
 
-.search-btn {
-  display: none;
-}
-
 .side-bar {
   position: fixed;
   top: 0;
