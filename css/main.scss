@@ -551,9 +551,140 @@ background: $blue;
 // ./cart.html -start
 
 
+.shopping-cart{
+
+  .box-container{
+    @include grid(31rem);
+
+    .box{
+      padding:2rem;
+      border:$border;
+      background: $white;
+      border-radius: .5rem;
+      box-shadow: $box-shadow;
+      display: flex;
+      align-items: center;
+      gap:.5rem;
+      position: relative;
+      
+      .fa-xmark{
+        position: absolute;
+        top:1rem; right:1.5rem;
+        font-size: 2.5rem;
+        color:$light-color;
+        cursor: pointer;
+
+        &:hover{
+          color:$black;
+        }
+      }
+
+      img{
+        
+        float: left;
+        width:  10rem;
+        height: 10rem;
+        
+      }
+
+      .content{
+
+        h3{
+          font-size: 1.7rem;
+          color:$black;
+        }
+
+        form{
+          padding:1rem 0;
+          display: flex;
+          gap:.5rem;
+          align-items: center;
+
+          span{
+            font-size: 1.5rem;
+            color:$light-color;
+          }
+
+          input{
+            width: 7rem;
+            padding: .5rem 1rem; 
+            color:$light-color;
+            border-radius: .5rem;
+            background: $light-bg;
+            font-size: 1.5rem;
+          }
+        }
+
+        .price{
+          font-size: 2rem;
+          color:$blue;
+
+          span{
+            font-size: 1.5rem;
+            color:$light-color;
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      .units{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .number{
+          padding: 1rem;
+          font-size: 1.5rem;        
+          
+        }
+
+        .mybtn{
+
+          font-size: 1.2rem;
+
+          border-radius: 50%;
+          border: #000 1px solid;
+          padding: 1rem;
+          margin: 0.5rem;
+      
+          cursor: pointer;
+
+          &:hover{
+            background:$gold;
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+
+  .cart-total{
+    margin-top: 2rem;
+    box-shadow: $box-shadow;
+    border:$border;
+    border-radius: .5rem;
+    background: $white;
+    padding:2rem;
+    padding-top: 1rem;
+
+    h3{
+      padding-top: 1rem;
+      font-size: 2rem;
+      color:$black;
+
+      span{
+        color:$blue;
+      }
+    }
+  }
+}
 
 
 
+// ./cart.html -end
+
+
+// 🥚 ./about.html
 
 
 
