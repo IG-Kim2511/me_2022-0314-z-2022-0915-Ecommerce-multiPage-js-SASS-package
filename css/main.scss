@@ -405,6 +405,238 @@ background: $blue;
 
 
 // 🥚./products.html
+/* 
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+*/
+
+.category{
+  .box-container{
+    // css320
+
+    @include gird(15rem);
+
+    .box{
+      background: yellow;
+      text-align: center;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      box-shadow: $box-shadow;
+
+      &:hover{
+        background: $black;
+
+        h3{
+          color: $white;
+        }
+      }
+      img{
+        height: 8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3{
+        font-size: 1.7rem;
+        color: $black;
+      }
+    }
+  }
+}
+
+.products{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -295,4 +295,25 @@ section {
 }
 .quick-links .credit img {
   height: 4rem;
+}
+
+/* 
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+*/
+.category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+.category .box-container .box {
+  background: yellow;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=main.css.map */
