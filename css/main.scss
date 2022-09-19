@@ -406,22 +406,21 @@ background: $blue;
 
 // 🥚./products.html
 /* 
-
-@mixin grid($val) {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-  gap: 2rem;
-}
+  @mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+  }
 */
 
 .category{
   .box-container{
     // css320
 
-    @include gird(15rem);
+    @include grid(15rem);
 
     .box{
-      background: yellow;
+      background: $white;
       text-align: center;
       border-radius: 0.5rem;
       padding: 2rem;
@@ -447,8 +446,84 @@ background: $blue;
   }
 }
 
+
+/* 
+  @mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+  }
+*/
+
+
 .products{
-  
+  .box-container{
+
+    // css320
+    @include grid(31rem);
+
+    .box{
+      background: $white;
+      box-shadow: $box-shadow;
+
+
+      border: $border;
+      text-align: center;
+      border-radius: .5rem;
+      overflow: hidden;
+
+      .image{
+        position: relative;
+
+
+        img{
+          height: 20rem;
+          padding: 3rem;
+
+          animation: fadeIn 0.2s linear;
+        }
+
+        .hover-img{
+          display: none;
+        }
+
+        .icons{
+          position: absolute;
+          top: 0; left: -7rem;
+
+
+          a{
+            width: 4.5rem;
+            font-size: 1.7rem;
+
+            display: block;
+            margin-top: 1rem;
+            height: 4.5rem;
+
+            line-height: 4.5rem;
+            border-radius: 50%;
+            color: $white;
+            background: $black;
+
+            &:hover{
+              background: $blue;
+            }
+          }
+        }
+      }
+
+      &:hover .image{
+        img{
+          transform: scale(90%);
+        }
+        .icons{
+          left: 1rem;
+        }
+      }
+      
+    }
+  }
+
 }
 
 

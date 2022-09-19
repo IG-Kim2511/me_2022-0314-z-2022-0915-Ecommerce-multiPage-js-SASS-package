@@ -298,12 +298,11 @@ section {
 }
 
 /* 
-
-@mixin grid($val) {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-  gap: 2rem;
-}
+  @mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+  }
 */
 .category .box-container {
   display: grid;
@@ -311,9 +310,81 @@ section {
   gap: 2rem;
 }
 .category .box-container .box {
-  background: yellow;
+  background: #fff;
   text-align: center;
   border-radius: 0.5rem;
   padding: 2rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.category .box-container .box:hover {
+  background: #333;
+}
+.category .box-container .box:hover h3 {
+  color: #fff;
+}
+.category .box-container .box img {
+  height: 8rem;
+  margin-bottom: 0.5rem;
+}
+.category .box-container .box h3 {
+  font-size: 1.7rem;
+  color: #333;
+}
+
+/* 
+  @mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+  }
+*/
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+.products .box-container .box {
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border: 0.2rem solid #333;
+  text-align: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.products .box-container .box .image {
+  position: relative;
+}
+.products .box-container .box .image img {
+  height: 20rem;
+  padding: 3rem;
+  -webkit-animation: fadeIn 0.2s linear;
+          animation: fadeIn 0.2s linear;
+}
+.products .box-container .box .image .hover-img {
+  display: none;
+}
+.products .box-container .box .image .icons {
+  position: absolute;
+  top: 0;
+  left: -7rem;
+}
+.products .box-container .box .image .icons a {
+  width: 4.5rem;
+  font-size: 1.7rem;
+  display: block;
+  margin-top: 1rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background: #333;
+}
+.products .box-container .box .image .icons a:hover {
+  background: #3b5998;
+}
+.products .box-container .box:hover .image img {
+  transform: scale(90%);
+}
+.products .box-container .box:hover .image .icons {
+  left: 1rem;
 }/*# sourceMappingURL=main.css.map */
