@@ -685,7 +685,68 @@ background: $blue;
 
 
 // 🥚 ./about.html
+.faq {
+  .accordion-container {
+    max-width: 70rem;
+    margin: 0 auto;
 
+    .accordion {
+      background: $white;
+      margin-bottom: 1.5rem;
+      box-shadow: $box-shadow;
+
+      &:last-child {
+        margin-bottom: .5rem;
+      }
+
+      &.active {
+
+        .accordion-heading {
+          background: $blue;
+
+          i {
+            transform: rotate(180deg);
+          }
+        }
+
+        .accordioin-content {
+          display: block;
+        }
+      }
+
+      .accordion-heading {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: space-between;
+        background: $black;
+        cursor: pointer;
+
+        h3 {
+          font-size: 2rem;
+          color: $white;
+        }
+
+        i {
+          font-size: 2rem;
+          color: $white;
+        }
+      }
+    }
+
+    .accordioin-content {
+      padding: 2rem;
+      font-size: 1.5rem;
+      line-height: 2;
+      color: $light-color;
+      display: none;
+
+      // 🥒css2022
+      animation: fadeIn .2s linear;
+    }
+  }
+}
 
 
 

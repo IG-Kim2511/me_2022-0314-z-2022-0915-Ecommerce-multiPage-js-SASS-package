@@ -500,6 +500,54 @@ section {
   color: #3b5998;
 }
 
+.faq .accordion-container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.faq .accordion-container .accordion {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.faq .accordion-container .accordion:last-child {
+  margin-bottom: 0.5rem;
+}
+.faq .accordion-container .accordion.active .accordion-heading {
+  background: #3b5998;
+}
+.faq .accordion-container .accordion.active .accordion-heading i {
+  transform: rotate(180deg);
+}
+.faq .accordion-container .accordion.active .accordioin-content {
+  display: block;
+}
+.faq .accordion-container .accordion .accordion-heading {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  background: #333;
+  cursor: pointer;
+}
+.faq .accordion-container .accordion .accordion-heading h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+.faq .accordion-container .accordion .accordion-heading i {
+  font-size: 2rem;
+  color: #fff;
+}
+.faq .accordion-container .accordioin-content {
+  padding: 2rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  display: none;
+  -webkit-animation: fadeIn 0.2s linear;
+          animation: fadeIn 0.2s linear;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
